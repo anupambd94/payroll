@@ -1,0 +1,57 @@
+.{
+
+margin:0;
+padding:0;
+}
+.container{
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform: translate(-50%,-50%);
+}
+input{
+
+  margin: 10%px;
+  width: 400px;
+  border:none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 28px;
+
+}
+ input:focus{
+   border-bottom: 2px solid #dodgerblue;
+ }
+ .fa{
+
+   position: absolute;
+   left: 380px;
+   top:10px;
+   font-size: 25px;
+   cursor: pointer;
+   color: #999;
+ }
+ .fa.active{
+    color: #dodgerblue;
+ }
+
+
+  <head> <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"></head>
+
+ <body>
+ <i class="fa fa-eye"></i>
+    <input type="TEXT" name="pass" class="form-control btn-lg" style=" height:30px; width:250px;" placeholder="enter Password"></td>
+</div>
+    <script>
+    var pwd= document.getElementById('pwd');
+    var eye = document.getElementById('eye');
+    eye.addEventListener('click',togglepass);
+    function togglepass(){
+      eye.classList.toggle('active');
+      (pwd.type=='password')? pwd.type='text':
+      pwd.type='password';
+    }
+      </script>
+	  </body>
